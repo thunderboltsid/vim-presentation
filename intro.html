@@ -43,17 +43,17 @@
 
     <!-- Any section element inside of this container is displayed as a slide -->
     <div class="slides">
-        <section>
-            <h1>Vim and Regexes</h1>
+        <section class="seb" data-background="images/javascript.jpg">
+            <h1 style="color:white">Vim and Regexes</h1>
 
-            <h3>Spice up your text editor</h3>
+            <h3 style="color:white">Spice up your text editor</h3>
 
             <p>
-                <small><a href="http://sshukla.de" target="_blank">Siddharth Shukla</a> /
-                    <a href="http://twitter.com/thunderboltsid" target="_blank">@thunderboltsid</a>
+                <small><a href="http://sshukla.de" target="_blank" style="color:white">Siddharth Shukla</a> /
+                    <a href="http://twitter.com/thunderboltsid" target="_blank" style="color:white">@thunderboltsid</a>
                 </small>
-                <small><a href="http://github.com/arpheno" target="_blank">Frederik Schaefer</a> / <a href="http://twitter.com/idontusetwitter"
-                                   target="_blank">@idontusetwitter</a></small>
+                <small><a href="https://github.com/jfschaefer" target="_blank" style="color:white">Frederik Schaefer</a> / <a href="http://twitter.com/idontusetwitter"
+                                   target="_blank" style="color:white">@idontusetwitter</a></small>
             </p>
         </section>
 
@@ -85,7 +85,7 @@
                         Using Vim since ages?
                     </li>
                     <li class="grad">
-                        Gen.CS TA 😛 
+                        We can use emojis 😛 
                     </li>
                 </ul>
             </section>
@@ -112,11 +112,25 @@
             </section>
         </section>
         <section>
+            <section class="seb" data-background="images/iwish.jpg">
+                <h2 style="color:white">Things I wish I knew before</h2>
+            </section>
+            <section class="seb" data-background="images/iwish.jpg">
+                <ul>
+                    <li class="grad">It's going to be different!</li>
+                    <li class="grad">Learning Vim is a process</li>
+                    <li class="grad">You need to breakup with your 🐁</li>
+                    <li class="grad">Learn something new every week</li>
+                    <li class="grad">It's not that "hard"</li>
+                </ul>
+            </section>
+        </section>
+        <section>
             <section class="seb" data-background="images/webdevelopment.jpg">
                 <h2>There are modes!!!</h2>
             </section>
             <section class="seb" data-background="images/webdevelopment.jpg">
-                <h2>About modes...</h2>
+                <h2>What about them?</h2>
                 <ul>
                     <li class="green">Normal</li>
                     <li class="blue">Insert</li>
@@ -125,497 +139,19 @@
             </section>
         </section>
         <section>
-            <section class="seb" data-background="images/htcpcp.jpg">
-                <h2>HTML</h2>
-						<pre><code data-trim contenteditable>
-&lt;!DOCTYPE html&gt;
-    &lt;html&gt;
-        &lt;head&gt;
-            &lt;title&gt;Coffeepots&lt;/title&gt;
-        &lt;/head&gt;
-        &lt;body&gt;
-            &lt;img title="This is a coffeepot" src="images/coffeepot.html"&gt;
-        &lt;/body&gt;
-    &lt;/html&gt;
-                        </code></pre>
+            <section class="seb" data-background="images/vim.png">
+                <h2>So, what's the hype about?</h2>
             </section>
-        <section class="seb" data-background="images/facebook.jpg">
-            <h2>HTML</h2>
-        </section>
-        </section>
-        <section>
-            <section class="seb" data-background="images/javascript.jpg">
-                <h2>Javascript</h2>
-                <ul>
-                    <li class="grad">
-                        Designed in ten days
-                    </li>
-                    <li class="grad">
-                        Dynamically modify HTML
-                    </li>
-                    <li class="grad">
-                        The universal language of the internet
-                    </li>
-                </ul>
-            </section>
-            <section class="seb" data-background="images/jquery.png">
-                <ul>
-                    <li class="darkgrad">
-                     Create elements with $("&lt;div&gt;");
-                    </li>
-                    <li class="darkgrad">
-                        Insert elements with $("#id").append($("&lt;div&gt;"));
-                    </li>
-                    <li class="darkgrad">
-                        Add interactivity with $("#id").click(function(){;});
-                    </li>
-                </ul>
-            </section>
-            <section class="seb" data-background="images/jquery.png">
-                <pre><code data-trim contenteditable>
-                    $.getJSON(url, {
-    id: trackID,
-    api_key: apiKey
-}, function(data) {
-    var analysisURL = data.response.track.audio_summary.analysis_url;
-    track = data.response.track;
-    // This call is proxied through the yahoo query engine.
-    // This is temporary, but works.
-    $.getJSON(&quot;http://query.yahooapis.com/v1/public/yql&quot;, {
-        q: &quot;select * from json where url=\&quot;&quot; + analysisURL +
-            &quot;\&quot;&quot;,
-        format: &quot;json&quot;
-    }, function(data) {
-        var div = $(&quot;#wrapped-in-green-candy&quot;);
-        if (data) {
-            data.forEach(function() {
-                $('#something').append(div).append(div.clone(
-                    true)).append($('&lt;button&gt;').html(
-                    &quot;Button&quot;).click(function() {
-                    app.doStuff();
-                }))
-            });
-        } else {
-            console.log('error',
-                'No analysis data returned:  sorry!');
-        }
-    });
-});
-                        </code></pre>
-            </section>
-
-        </section>
-        <section>
-            <section class="seb" data-background="images/css.jpg">
-                <h2 style="color:white"> Cascading Style Sheets</h2>
-                <ul>
-                    <li class="darkgrad">
-                        Language to style text
-                    </li>
-                    <li class="darkgrad">
-                        Was not meant for layout on the web
-                    </li>
-                </ul>
-            </section>
-                <section class="seb" data-background="images/css.jpg">
-                <img src="images/tweet.jpg">
-            </section>
-            <section class="seb" data-background="images/flex.png">
-                <h2>CSS3 Flexbox</h2>
-            </section>
-        </section>
-        <section>
-            <section class="seb" data-background="images/angular.jpg">
-            </section>
-            <section class="seb" data-background="images/angular.jpg">
-                <ul>
-                    <li class="darkgrad" style="padding:10px 100px;">
-                        Model-View-Controller Framework in JS
-                    </li>
-                    <li class="darkgrad" style="padding:10px 100px;">
-                        Declarative HTML template language
-                    </li>
-                    <li class="darkgrad" style="padding:10px 100px;">
-                        Data Binding
-                    </li>
-                </ul>
-            </section>
-        </section>
-        <section>
-            <section class="seb" data-background="images/separate-concerns.jpg">
-                <h2 class="grad"> Separation of concerns </h2>
-                <ul>
-                    <li class="grad">
-                        POJOs(Plain Old Javascript Objects) for models
-                    </li>
-                    <li class="grad">
-                        Javascript for the controllers
-                    </li>
-                    <li class="grad">
-                        HTML for the view layer
-                    </li>
-                </ul>
-            </section>
-        </section>
-        <section class="seb" data-background="images/dijkstra.jpg">
-            <h2> Declarative vs. Procedural</h2>
-             <p class="radgrad" style="color:#eee;padding:100px;">"...our intellectual powers are rather geared to master static relations and that our powers to visualize processes evolving in time are relatively poorly developed."</p>
-                <small class="grad" style="color:#eee;padding:0px 100px;">Edsger W. Dijkstra</small>
-        </section>
-        <section class="seb" data-background="images/templating.jpg">
-            <h2>Templating</h2>
-            <ul>
-                <li class="grad">
-                    New HTML vocabulary: Directives
-                </li>
-                <li class="grad">
-                    ng-repeat, ng-if, ng-show, ng-everything
-                </li>
-                <li class="grad">
-                    custom directives
-                </li>
-            </ul>
-        </section>
-        <section class="seb" data-background="images/databinding.jpg">
-            <h2>Databinding</h2>
-            <ul>
-                <li class="grad">
-                    When the model changes, the view changes
-                </li>
-                <li class="grad">
-                    When the view changes, the model changes
-                </li>
-                <li class="grad">
-                    Dirty checking and re-rendering
-                </li>
-            </ul>
-        </section>
-
-        <section>
-            <section class="seb" data-background="images/villevivante.jpg">
-                <h2>What is D3.js?</h2>
-                <blockquote cite="http://d3js.org">
-                    D3.js is an open-source JavaScript library for manipulating documents
-                    based on data.
-                </blockquote>
-                <ul>
-                    <li>Created by <a href="http://bost.ocks.org/mike/" target="_blank">Mike
-                        Bostock</a> and <a href="http://homes.cs.washington.edu/~jheer/">Jeff
-                        Heer</a></li>
-                    <li>Built for data visualization with <a
-                            href="https://developer.mozilla.org/en-US/docs/Web"
-                            target="_blank">web</a> technolgies
-                    </li>
-                    <li><a href="http://vis.stanford.edu/papers/d3"
-                           target="_blank">Paper</a> published in <a
-                            href="http://www.infovis.org/" target="_blank">InfoVis
-                        2011</a></li>
-                </ul>
-            </section>
-            <section class="seb" >
-                <img src="images/D3JS.png">
-            </section>
-            <section>
-                <h2>CSS</h2>
-                <blockquote>CSS (Cascading Stylesheets) is a language for styling HTML
-                    pages.
-                </blockquote>
-						<pre><code data-trim contenteditable>
-/* Applied to all &lt;p&gt; tags */
-p {
-  color: blue;
-}
-/* Applied to all tags with the class &quot;red&quot; */
-.red {
-  background: red;
-}
-/* Applied to the tag with the id &quot;some-id&quot; */
-#some-id {
-  font-style: italic;
-}
-/* Applied only to &lt;p&gt; tags that are inside &lt;li&gt;
-tags */
-  li p {
-  color: #0C0;
-}
-                        </code></pre>
-            </section>
-            <section>
-                <h2>SVG</h2>
-                <blockquote>SVG (Scalable Vector Graphics) is an XML format used for
-                    drawing.
-                </blockquote>
-						<pre><code data-trim contenteditable>
-&lt;svg width=&quot;300&quot; height=&quot;180&quot;&gt;
-    &lt;circle cx=&quot;30&quot; cy=&quot;50&quot; r=&quot;25&quot;/&gt;
-    &lt;circle cx=&quot;90&quot; cy=&quot;50&quot; r=&quot;25&quot; class=&quot;red&quot;/&gt;
-    &lt;circle cx=&quot;150&quot; cy=&quot;50&quot; r=&quot;25&quot; class=&quot;fancy&quot;/&gt;
-    &lt;rect x=&quot;10&quot; y=&quot;80&quot; width=&quot;40&quot; height=&quot;40&quot; fill=&quot;steelBlue&quot;/&gt;
-    &lt;rect x=&quot;70&quot; y=&quot;80&quot; width=&quot;40&quot; height=&quot;40&quot; style=&quot;fill: steelBlue&quot;/&gt;
-    &lt;rect x=&quot;130&quot; y=&quot;80&quot; width=&quot;40&quot; height=&quot;40&quot; class=&quot;fancy&quot;/&gt;
-&lt;/svg&gt;
-                        </code></pre>
-            </section>
-            <section>
-                <h2>DOM</h2>
-                <blockquote>The interactive object graph from the tag hierarchy of HTML
-                    page is called the Document Object Model, or DOM.
-                </blockquote>
-						<pre><code data-trim contenteditable>
-&lt;div&gt;
-    &lt;p&gt;Normal paragraph&lt;/p&gt;
-
-    &lt;p class=&quot;red&quot;&gt;Red paragraph&lt;/p&gt;
-&lt;/div&gt;
-&lt;ol&gt;
-    &lt;li id=&quot;some-id&quot;&gt;Unique element&lt;/li&gt;
-    &lt;li&gt;Another list element&lt;/li&gt;
-    &lt;li&gt;
-        &lt;p&gt;Paragraph inside list element&lt;/p&gt;
-        &lt;p&gt;Second paragraph&lt;/p&gt;
-    &lt;/li&gt;
-&lt;/ol&gt;
-                        </code></pre>
-            </section>
-            <section>
-                <h2>The DOM API</h2>
-                <blockquote>The <a target="_blank"
-                                   href="https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model">DOM
-                    API</a> provides a programming interface for HTML, XML and SVG
-                    documents.
-                </blockquote>
-						<pre><code data-trim contenteditable>
-// DOM API
-document.getElementById('some-id');
-// &lt;li id=&quot;some-id&quot;&gt;Unique element&lt;/li&gt;
-document.getElementsByTagName('p').length;
-// 4
-var reds = document.getElementsByClassName('red');
-// [&lt;p class=&quot;red&quot;&gt;Red paragraph&lt;/p&gt;]
-reds[0].innerText
-// &quot;Red paragraph&quot;
-                        </code></pre>
-            </section>
-
-        </section>
-        <section>
-            <section>
-                <h2>What can D3.js do?</h2>
-                <blockquote cite="https://www.dashingd3js.com/why-build-with-d3js">D3
-                    brings your data to life using HTML, SVG, CSS and JavaScript.
-                </blockquote>
-            </section>
-            <section>
-                <h2>The D3 Showreel</h2>
-                <iframe src="d3showreel.html" width="800px" height="600px"
-                        seamless="seamless"></iframe>
-            </section>
-            <section>
-                <h2>More Examples</h2>
-                <ul>
-                    <li><a href="http://www.facesoffracking.org/data-visualization/"
-                           target="_blank">California's getting Frakked!</a></li>
-                    <li><a href="http://bost.ocks.org/mike/miserables/" target="_blank">Les
-                        Misérables Co-occurrence</a></li>
-                    <li><a href="http://www.jasondavies.com/parallel-sets/"
-                           target="_blank">Titanic survivors parallel sets</a></li>
-                    <li><a href="http://villevivante.ch/" target="_blank">Ville
-                        Vivante</a></li>
-                    <li><a href="http://fireball.ahoi.in/" target="_blank">Fireball from
-                        outer space</a></li>
-                </ul>
-            </section>
-        </section>
-        <section>
-            <section>
-                <h2>How does D3.js work?</h2>
-                <blockquote cite="http://d3js.org">
-                    D3 allows you to bind arbitrary data to a Document Object Model
-                    (DOM), and then apply data-driven transformations to the document.
-                </blockquote>
-            </section>
-            <section>
-                <h2>Let's break it down</h2>
-						<pre><code data-trim contenteditable>
-var dataset = [ 5, 10, 13, 19, 21, 25, 22, 18, 15, 13,
-11, 12, 15, 20, 18, 17, 16, 18, 23, 25 ]; // Mock data
-
-d3.select("body") // selector
-  .selectAll("div")
-  .data(dataset) // Bind data to DOM
-  .enter() // Creates empty containers for the elements in dataset
-  .append("div") // DOM Manipulation
-  .attr("class", "bar") // static property
-  .style("height", function(d) { // dynamic property
-     return (d * 5) + "px";
-   })
-  .style("display","inline-block")
-  .style("width","20px")
-  .style("margin-right", "2px")
-  .style("background-color","teal");
-                        </code></pre>
-                <a href="tryd3.html" target="_blank">Try it out!</a>
-            </section>
-            <section>
-                <h2>Explaining data()</h2>
-                        <pre><code data-trim contenteditable>
-var data = [ {msg:&quot;Hello&quot;,cats:42}, {msg:&quot;World&quot;,cats:17} ]; 
-d3.select(&quot;body&quot;).selectAll(&quot;q&quot;).data(data).enter().append(&quot;q&quot;);
-console.log( document.querySelector('q').__data__ );
-                        </code></pre>
-                <a href="tryd3.html" target="_blank">Try it out!</a>
-            </section>
-            <section>
-                <h2>A quick bar chart (data)</h2>
-                        <pre><code data-trim contenteditable>
-letter  frequency
-A   .08167
-B   .01492
-C   .02782
-D   .04253
-E   .12702
-F   .02288
-G   .02015
-H   .06094
-I   .06966
-J   .00153
-K   .00772
-L   .04025
-M   .02406
-N   .06749
-O   .07507
-P   .01929
-Q   .00095
-R   .05987
-S   .06327
-T   .09056
-U   .02758
-V   .00978
-W   .02360
-X   .00150
-Y   .01974
-Z   .00074
-                        </code></pre>
-                <a href="tryd3.html" target="_blank">Try it out!</a>
-            </section>
-            <section>
-                <h2>A quick bar chart (JS)</h2>
-                        <pre><code data-trim contenteditable>
-var margin = {top: 20, right: 20, bottom: 30, left: 40},
-    width = 960 - margin.left - margin.right,
-    height = 500 - margin.top - margin.bottom;
-
-var x = d3.scale.ordinal()
-    .rangeRoundBands([0, width], .1);
-
-var y = d3.scale.linear()
-    .range([height, 0]);
-
-var xAxis = d3.svg.axis()
-    .scale(x)
-    .orient(&quot;bottom&quot;);
-
-var yAxis = d3.svg.axis()
-    .scale(y)
-    .orient(&quot;left&quot;)
-    .ticks(10, &quot;%&quot;);
-
-var svg = d3.select(&quot;body&quot;).append(&quot;svg&quot;)
-    .attr(&quot;width&quot;, width + margin.left + margin.right)
-    .attr(&quot;height&quot;, height + margin.top + margin.bottom)
-  .append(&quot;g&quot;)
-    .attr(&quot;transform&quot;, &quot;translate(&quot; + margin.left + &quot;,&quot; + margin.top + &quot;)&quot;);
-
-d3.tsv(&quot;data.tsv&quot;, type, function(error, data) {
-  if (error) throw error;
-
-  x.domain(data.map(function(d) { return d.letter; }));
-  y.domain([0, d3.max(data, function(d) { return d.frequency; })]);
-
-  svg.append(&quot;g&quot;)
-      .attr(&quot;class&quot;, &quot;x axis&quot;)
-      .attr(&quot;transform&quot;, &quot;translate(0,&quot; + height + &quot;)&quot;)
-      .call(xAxis);
-
-  svg.append(&quot;g&quot;)
-      .attr(&quot;class&quot;, &quot;y axis&quot;)
-      .call(yAxis)
-    .append(&quot;text&quot;)
-      .attr(&quot;transform&quot;, &quot;rotate(-90)&quot;)
-      .attr(&quot;y&quot;, 6)
-      .attr(&quot;dy&quot;, &quot;.71em&quot;)
-      .style(&quot;text-anchor&quot;, &quot;end&quot;)
-      .text(&quot;Frequency&quot;);
-
-  svg.selectAll(&quot;.bar&quot;)
-      .data(data)
-    .enter().append(&quot;rect&quot;)
-      .attr(&quot;class&quot;, &quot;bar&quot;)
-      .attr(&quot;x&quot;, function(d) { return x(d.letter); })
-      .attr(&quot;width&quot;, x.rangeBand())
-      .attr(&quot;y&quot;, function(d) { return y(d.frequency); })
-      .attr(&quot;height&quot;, function(d) { return height - y(d.frequency); });
-});
-
-function type(d) {
-  d.frequency = +d.frequency;
-  return d;
-}
-                        </code></pre>
-                <a href="tryd3.html" target="_blank">Try it out!</a>
-            </section>
-            <section>
-                <h2>A quick bar chart (CSS)</h2>
-                        <pre><code data-trim contenteditable>
-.bar {
-  fill: steelblue;
-}
-
-.bar:hover {
-  fill: brown;
-}
-
-.axis {
-  font: 10px sans-serif;
-}
-
-.axis path,
-.axis line {
-  fill: none;
-  stroke: #000;
-  shape-rendering: crispEdges;
-}
-
-.x.axis path {
-  display: none;
-}
-                        </code></pre>
-                <a href="tryd3.html" target="_blank">Try it out!</a>
-            </section>
-        </section>
-        <section>
-            <h1>Beyond D3</h1>
-            <ul>
-                <li><a href="http://nvd3.org/" target="_blank">Novus D3 (NvD3)</a></li>
-                <li><a href="http://dimplejs.org/" target="_blank">Dimple.js</a></li>
-                <li><a href="http://tenxer.github.io/xcharts/"
-                       target="_blank">xCharts</a></li>
-                <li><a href="http://code.shutterstock.com/rickshaw/" target="_blank">Rickshaw</a>
-                </li>
-                <li><a href="https://trifacta.github.io/vega/" target="_blank">Vega</a></li>
-            </ul>
         </section>
         <section style="text-align: left;">
             <h1>THE END</h1>
 
             <p>
-                - <a href="http://codepen.io/anon/pen/KpywKL" target="_blank">Try the
-                online editor</a> <br>
-                - <a href="https://github.com/mbostock/d3" target="_blank">Source
-                code</a> &amp; <a href="https://github.com/mbostock/d3/wiki">documentation</a>
+                - <a href="http://www.openvim.com" target="_blank">Try the
+                interactive tutorial</a> <br>
+                - <a href="http://vim-adventures.com" target="_blank">Play Vim Adventures online</a>
                 <br>
-                - <a href="http://www.recursion.org/d3-for-mere-mortals/">D3 for Mere
-                Mortals</a> <br>
+                - <a href="http://michael.peopleofhonoronly.com/vim/vim_cheat_sheet_for_programmers_print.png" target="_blank">Vim Cheat Sheet</a> <br>
                 - <a href="http://vis.stanford.edu/files/2011-D3-InfoVis.pdf">Data Driven
                 Documents (paper)</a> <br>
                 - <a href="http://shop.oreilly.com/product/0636920026938.do">Interactive
