@@ -1,0 +1,48 @@
+
+.seb li {
+    padding: 10px 50px;
+    border-radius: 10px;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    color: #fff;
+    margin: 2px;
+}
+
+.seb h2, .grad {
+    color: #ddd;
+    background-image: -webkit-linear-gradient(
+            left, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.4) 50%, rgba(0, 0, 0, 0.0) 99%
+    );
+}
+
+.seb blockquote {
+    color: white;
+}
+
+.darkgrad {
+    color: #ddd;
+    background-image: -webkit-linear-gradient(
+            left, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.6) 23%, rgba(0, 0, 0, 0.6) 77%, rgba(0, 0, 0, 0) 99%
+    );
+}
+
+.radgrad {
+background: radial-gradient(ellipse at center, rgba(0,0,0,1) 0%,rgba(0,0,0,0) 60%); /* W3C */
+    padding:100px;
+}
+.green {
+    background-color: rgba(10, 245, 40, 0.7);
+}
+
+.blue {
+    background-color: rgba(0, 56, 245, 0.7);
+}
+
+.violet {
+    background-color: rgba(198, 0, 255, 0.7);
+}
+
+.gray {
+    background-color: rgba(0, 0, 0, 0.27);
+}
