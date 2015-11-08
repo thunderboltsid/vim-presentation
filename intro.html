@@ -190,9 +190,38 @@
             <section class="seb" data-background="rgba(0,0,0,1)">
                 <img src="images/perl.png">
             <section class="seb" data-background="images/numbers.jpg">
-                <h2 style="color:white;">
+                <p style="color:white;font-size:48pt;">
                     &#91;&#43;&#45;&#93;&#63;&#40;&#92;&#100;&#43;&#40;&#92;&#46;&#92;&#100;&#43;&#41;&#63;&#124;&#92;&#46;&#92;&#100;&#43;&#41;&#40;&#91;&#101;&#69;&#93;&#91;&#43;&#45;&#93;&#63;&#92;&#100;&#43;&#41;&#63;
-                </h2>
+                </p>
+            </section>
+            
+            <section class="seb" data-background="images/numbers.jpg">
+                <h2>Examples</h2>
+                <ul>
+                    <li class="grad">a+b       &nbsp;<span style="color:black">matches </span>&nbsp; ab, aaaab</li>
+                    <li class="grad">[0-9]+    &nbsp;<span style="color:black">matches </span>&nbsp; 0312, 23</li>
+                    <li class="grad">([0-9]x)+ &nbsp;<span style="color:black">matches </span>&nbsp; 3x5x, 0x</li>
+                </ul>
+            </section>
+            <section class="seb" data-background="images/numbers.jpg">
+                <h2>Find digits in file</h2>
+                <p style="color:white;font-size:40pt;">
+                    cat example | grep --color=auto -P '[0-9]+'
+                </p>
+            </section>
+            <section class="seb" data-background="images/numbers.jpg">
+                <h2>Reset fontsize in config file</h2>
+                <p style="color:white;font-size:40pt;">
+                    sed "s/^\(fontsize *= *\).*$/\124/" font.config
+                </p>
+                <p style="color:black; font-size:40pt;">
+                We find a match for <span style="color:white;">^\(fontsize *= *\).*$</span>
+                and replace it by <span style="color:white;">\124</span>
+                </p>
+                <p style="color:black; font-size:40pt;">
+                    With parentheses you can mark groups and access them later
+                    using <span style="color:white;">\1</span>,
+<span style="color:white;">\2</span>, ...
             </section>
         </section>
         <section style="text-align: left;">
