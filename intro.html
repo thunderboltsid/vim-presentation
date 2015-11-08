@@ -172,11 +172,19 @@
                     &#91;&#43;&#45;&#93;&#63;&#40;&#92;&#100;&#43;&#40;&#92;&#46;&#92;&#100;&#43;&#41;&#63;&#124;&#92;&#46;&#92;&#100;&#43;&#41;&#40;&#91;&#101;&#69;&#93;&#91;&#43;&#45;&#93;&#63;&#92;&#100;&#43;&#41;&#63;
                 </p>
             </section>
-
+            
+            <section class="seb" data-background="images/numbers.jpg">
+                <h2>Examples</h2>
+                <ul>
+                    <li class="grad">a+b       <br/><span style="color:black">matches </span><br/> ab, aaaab</li>
+                    <li class="grad">[0-9]+    <br/><span style="color:black">matches </span><br/> 0312, 23</li>
+                    <li class="grad">([0-9]x)+ <br/><span style="color:black">matches </span><br/> 3x5x, 0x</li>
+                </ul>
+            </section>
             <section class="seb" data-background="images/numbers.jpg">
                 <h2>Find digits in file</h2>
                 <p style="color:white;font-size:40pt;">
-                    cat example | grep --color=auto -P '\d+'
+                    cat example | grep --color=auto -P '[0-9]+'
                 </p>
             </section>
             <section class="seb" data-background="images/numbers.jpg">
@@ -188,6 +196,10 @@
                 We find a match for <span style="color:white;">^\(fontsize *= *\).*$</span>
                 and replace it by <span style="color:white;">\124</span>
                 </p>
+                <p style="color:black; font-size:40pt;">
+                    With parentheses you can mark groups and access them later
+                    using <span style="color:white;">\1</span>,
+<span style="color:white;">\2</span>, ...
             </section>
         </section>
         <section style="text-align: left;">
